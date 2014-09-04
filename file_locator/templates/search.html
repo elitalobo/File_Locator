@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block SearchFunction %}
+<h2>Search App</h2>
+
+<form action="{{url_for('search')}}" method=POST>
+    <dl>
+    <dt>Enter Filename:
+    <dd><input type=text name=filename>
+    <dd><input type=submit value=Search>
+    </dl>
+    </form>
+    <div>{{text|safe}}</div>
+{% endblock %}
+
