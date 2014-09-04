@@ -22,7 +22,7 @@ listof_files = []
 location_list = []
 big_list = collections.defaultdict(list)
 
-@app.route('/search', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 
 def search():
     error = None
